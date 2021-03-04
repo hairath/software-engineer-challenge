@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API.PP</name>
+    </assembly>
+    <members>
+        <member name="T:API.PP.Controllers.LoginController">
+            <summary>
+            Controlador de autenticação de usuários na API
+            </summary>
+        </member>
+        <member name="M:API.PP.Controllers.LoginController.Login(Api.Application.Domain.Dtos.Login.LoginDto)">
+            <summary>
+            Método responsável por autenticar usuários.
+            </summary>
+            /// <param name="user"></param>
+            <returns>retorna uma lista de usuários</returns>
+        </member>
+        <member name="T:Api.Application.Controllers.UserController">
+            <summary>
+            Controlador de query dos usuários do sistema
+            </summary>
+        </member>
+        <member name="M:Api.Application.Controllers.UserController.Get(Api.Application.Domain.Dtos.User.UserDTOFilter)">
+            <summary>
+            Método responsável por buscar usuarios ordenados por prioridade e filtrar pelo nome e username a partir de uma palavra chave.
+            </summary>
+            <param name="filter"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

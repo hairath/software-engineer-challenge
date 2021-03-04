@@ -1,0 +1,15 @@
+version: "3.8"
+
+networks:
+  apippNET:
+
+services:
+  apipp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apipp
+    networks:
+      - apippNET
+    ports:
+      - 5000:80
